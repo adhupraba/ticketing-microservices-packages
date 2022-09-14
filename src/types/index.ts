@@ -9,4 +9,5 @@ declare global {
 }
 
 export * from "./errors";
+export * from "./orderStatus";
 export * from "./user";
