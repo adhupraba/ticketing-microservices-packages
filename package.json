@@ -11,8 +11,8 @@
     "clean": "rimraf build",
     "build": "npm run clean && tsc",
     "copy": "cpy 'package.json' build",
-    "commit": "git add . && git commit -m \"$COMMIT_MSG\" && git push",
-    "pub": "npm run build && npm run commit && npm version patch && npm run copy && cd build && npm publish --access public"
+    "commit": "git add . && git commit -m \"$COMMIT_MSG\"",
+    "pub": "npm run build && npm run commit && npm version patch && npm run copy && cd build && npm publish --access public && git push"
   },
   "keywords": [],
   "author": "",
