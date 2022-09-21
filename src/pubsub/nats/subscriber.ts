@@ -13,7 +13,7 @@ export abstract class Subscriber<T extends Event> {
 
   protected ackWait = 5 * 1000; // 5 seconds
 
-  constructor(private client: Stan) {}
+  constructor(protected client: Stan) {}
 
   subscriptionOptions() {
     return this.client
