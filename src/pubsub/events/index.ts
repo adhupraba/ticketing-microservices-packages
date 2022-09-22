@@ -5,3 +5,5 @@ export * from "./orderCancelledEvent";
 export * from "./orderCreatedEvent";
 
 export * from "./expirationCompleteEvent";
+
+export * from "./paymentCreatedEvent";
